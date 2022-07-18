@@ -8,6 +8,8 @@ import Home from './pages/Home'
 import Navabar from './components/Navbar'
 import Footer from './components/Footer'
 
+import './App.css'
+
 const App = () => {
     return (
         <Box width="400px" sx={{ width: { xl: '1488px' } }} m="auto">
