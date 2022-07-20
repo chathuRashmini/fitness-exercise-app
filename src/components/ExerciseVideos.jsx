@@ -32,10 +32,10 @@ const ExerciseVideos = ({ exerciseVideos, name }) => {
 
                         <Box>
                             <Typography variant='h5' color='#000'>
-                                Video Title: {item.video.title}
+                                {item.video.title}
                             </Typography>
                             <Typography variant='h6' color='#000'>
-                                Youtube Channel: {item.video.channelName}
+                                By {item.video.channelName}
                             </Typography>
                         </Box>
                     </a>

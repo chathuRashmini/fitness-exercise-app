@@ -1,9 +1,21 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Stack, Typography } from '@mui/material'
 
-import icon from '../assets/icons/gym.png'
+import { exerciseBodyParts, None } from '../assets/images'
 
 const BodyPart = ({ item, bodyPart, setbodyPart }) => {
+
+    const [bpImg, setbpImg] = useState(None)
+
+    useEffect(() => {
+        console.log('item: ', item)
+        exerciseBodyParts.map((exerciseBP) => {
+            if (exerciseBP.name.toLowerCase() === item) {
+                setbpImg(exerciseBP.img)
+            }
+        })
+    }, [item])
+
     return (
         <Stack
             type='button'
@@ -24,14 +36,17 @@ const BodyPart = ({ item, bodyPart, setbodyPart }) => {
                 window.scrollTo({ top: 1800, left: 100, behavior: 'smooth' })
             }}
         >
-            <img src={icon} alt="icon" style={{ width: '40px', height: '40px' }} />
+
+            <img src={bpImg} alt={bodyPart} style={{ width: '120px', height: '120px', color: '#16C07B', borderRadius: '50px' }} />
 
             <Typography
                 fontSize='24px' 
                 fontWeight='bold'
                 color='#16C07B'
                 textTransform='capitalize'
-            >{item}</Typography>
+            >
+                {item}
+            </Typography>
         </Stack>
     )
 }

@@ -25,6 +25,7 @@ const HeroBanner = () => {
                 sx={{ fontSize: { lg: '44px', xs: '40px'}}}
                 mb='23px'
                 mt='30px'
+                color='#939294'
             >
                 Sweat, Smile <br /> and Repeat
             </Typography>
@@ -32,14 +33,16 @@ const HeroBanner = () => {
                 fontSize="20px"
                 lineHeight='35px'
                 mb={8}
+                color='#B5B5B5'
             >
                 Check out the most effective exercises.
             </Typography>
 
             <Button
                 variant='contained'
-                style={{ backgroundColor: '#16C07B', padding: '10px'}}
+                style={{ backgroundColor: '#16C07B', padding: '10px' }}
                 href='#exercises'
+                className='search-btn'
             >
                 Explore Exercises
             </Button>
@@ -52,6 +55,7 @@ const HeroBanner = () => {
                     display: { lg: 'block', xs: 'none' }
                 }}
                 fontSize='200px'
+                mt= '25px'
             >
                 Exercise
             </Typography>

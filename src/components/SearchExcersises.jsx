@@ -51,6 +51,7 @@ const SearchExcersises = ({ setexercises, bodyPart, setbodyPart }) => {
                 }}
                 mb='50px'
                 textAlign="center"
+                color='#939294'
             >
                 Awesome Exercises You <br /> Should Know
             </Typography>

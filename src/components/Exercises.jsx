@@ -47,10 +47,9 @@ const Exercises = ({ setexercises, bodyPart, exercises }) => {
         <Box 
             id="exercises"
             sx={{ mt: { lg: '90px' } }}
-            mt= '50px'
-            p='20px'
+            p='0 20px'
         >
-            <Typography variant='h3' mb='45px'>
+            <Typography variant='h3' mb='45px' color='#939294' fontWeight='bold'>
                 Showing Results
             </Typography>
 
@@ -59,6 +58,7 @@ const Exercises = ({ setexercises, bodyPart, exercises }) => {
                 sx={{ gap: {lg: '90px', xs: '50px'}}}
                 flexWrap='wrap'
                 justifyContent='center'
+                alignItems='center'
             >
                 { currentExercises.map((exercise, index) => (
                     <ExerciseCard
