@@ -61,7 +61,7 @@ const SearchExcersises = ({ setexercises, bodyPart, setbodyPart }) => {
                     sx={{
                         input: { fontWeight: '700', border: 'none', borderRadius: '4px' },
                         width: { lg: '1000px', xs: '360px'},
-                        backgroundColor: '#FFF'
+                        backgroundColor: '#FFF',
                     }}
                     height='76px'
                     value={search}
